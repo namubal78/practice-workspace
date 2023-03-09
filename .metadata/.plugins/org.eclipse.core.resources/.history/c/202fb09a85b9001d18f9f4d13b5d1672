@@ -1,0 +1,21 @@
+package com.gasystem.practice.member.model.dao;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.gasystem.practice.member.model.vo.Member;
+
+@Repository
+public class MemberDao {
+
+	public Member loginMember(SqlSessionTemplate sqlSession, Member m) {
+		System.out.println("dao : " + m.getMemberId());
+//		Member mem = sqlSession.selectOne("loginMember", m);
+//		System.out.println("########## id : " + mem);
+//		int n = sqlSession.selectOne("loginMember", m);
+		int m = sqlSession.selectOne("loginMember");
+		System.out.println("########## id : " + m);
+//		return sqlSession.selectOne("loginMember", m);
+	}
+	
+}

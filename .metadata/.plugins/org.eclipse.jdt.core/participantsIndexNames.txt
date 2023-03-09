@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\namubal78_workspaces\practice-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3301841988.index
+\Practice\src\main\java
+C:\namubal78_workspaces\practice-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4047508662.index
+\Practice\src\main\java

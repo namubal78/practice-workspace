@@ -1,0 +1,5 @@
+package com.gasystem.practice.member.model.service;
+
+public class MemberServiceImpl {
+
+}

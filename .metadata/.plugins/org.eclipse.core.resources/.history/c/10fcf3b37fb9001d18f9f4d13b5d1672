@@ -1,0 +1,83 @@
+package com.gasystem.practice.member.model.vo;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@NoArgsConstructor // 기본생성자
+@AllArgsConstructor // 모든 필드를 매개변수로 갖는 생성자
+@Setter // setter 메소드들
+@Getter // getter 메소드들
+@ToString // toString 메소드
+//public class Member {
+//
+//	private int memberNo;
+//	private String memberId;
+//	private String memberPwd;
+//	private String memberName;
+//
+//	
+//	public Member(int memberNo, String memberId, String memberPwd, String memberName) {
+//		super();
+//		this.memberNo = memberNo;
+//		this.memberId = memberId;
+//		this.memberPwd = memberPwd;
+//		this.memberName = memberName;
+//	}
+//	
+//	public int getMemberNo() {
+//		return memberNo;
+//	}
+//	public void setMemberNo(int memberNo) {
+//		this.memberNo = memberNo;
+//	}
+//	public String getMemberId() {
+//		return memberId;
+//	}
+//	public void setMemberId(String memberId) {
+//		this.memberId = memberId;
+//	}
+//	public String getMemberPwd() {
+//		return memberPwd;
+//	}
+//	public void setMemberPwd(String memberPwd) {
+//		this.memberPwd = memberPwd;
+//	}
+//	public String getMemberName() {
+//		return memberName;
+//	}
+//	public void setMemberName(String memberName) {
+//		this.memberName = memberName;
+//	}
+//	
+
+public class Member {
+
+	private int memberNo; //MEMBER_NO	NUMBER
+	private String memberId; //MEMBER_ID	VARCHAR2(20 BYTE)
+	private String memberPwd; //MEMBER_PWD	VARCHAR2(20 BYTE)
+	private String memberName; //MEMBER_NAME	VARCHAR2(18 BYTE)
+	private String email; //EMAIL	VARCHAR2(40 BYTE)
+	private String phone; //PHONE	VARCHAR2(11 BYTE)
+	private String addressZip; //ADDRESS_ZIP	VARCHAR2(10 BYTE)
+	private String address1; //ADDRESS_1	VARCHAR2(300 BYTE)
+	private String address2; //ADDRESS_2	VARCHAR2(200 BYTE)
+	private String gender; //GENDER	CHAR(1 BYTE)
+//	private Date memberBirthYear; //MEMBER_BIRTH_YEAR	DATE
+	private int height; //HEIGHT	NUMBER
+	private int weight; //WEIGHT	NUMBER
+//	private Date memberEnrollDate; //MEMBER_ENROLL_DATE	DATE
+	private String memberStatus; //MEMBER_STATUS	CHAR(1 BYTE)
+
+	
+}
+//	@Override
+//	public String toString() {
+//		return "Member [memberNo=" + memberNo + ", memberId=" + memberId + ", memberPwd=" + memberPwd + ", memberName="
+//				+ memberName + "]";
+//	}
+//	
+//	
+//}

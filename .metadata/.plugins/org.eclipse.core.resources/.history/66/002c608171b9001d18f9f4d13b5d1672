@@ -1,0 +1,5 @@
+package com.gasystem.practice.member.controller;
+
+public class MemberController {
+
+}

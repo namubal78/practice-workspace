@@ -1,0 +1,34 @@
+package com.gasystem.practice.member.controller;
+
+@Controller
+public class MemberController {
+
+	@Autowired
+	private MemberService memberService;
+	
+	@RequestMapping("login.me")
+	public ModelAndView loginMember(Member m, ModelAndView mv, HttpSession session, HttpServletResponse response) {
+		
+		Member loginUser = memberService.loginMember(m);
+		
+		if (loginUser != null) {
+			
+			session.setAttribute("loginUser", loginUser);
+			
+			session.setAttribute("alertMsg", "로그인에 성공했습니다.");
+			
+			mv.setViewName("redirect:/");
+		}
+		else {
+			
+			session.setAttribute("alertMsg", "로그인에 실패했습니다.");
+			
+			mv.setViewName("redirect:/");
+		}
+		
+		return mv;
+		
+	}
+	
+	
+}

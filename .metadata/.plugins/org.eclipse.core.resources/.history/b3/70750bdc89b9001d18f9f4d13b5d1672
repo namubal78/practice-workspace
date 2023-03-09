@@ -1,0 +1,50 @@
+package com.gasystem.practice.member.controller;
+
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.gasystem.practice.member.model.service.MemberService;
+import com.gasystem.practice.member.model.vo.Member;
+
+@Controller
+public class MemberController {
+
+	@Autowired
+	private MemberService memberService;
+	
+	@RequestMapping("login.me")
+	public ModelAndView loginMember(Member m, ModelAndView mv, HttpSession session, HttpServletResponse response) {
+		
+		System.out.println("m: " + m);
+		
+		Member loginUser = memberService.loginMember(m);
+		
+		System.out.println("loginUser : " + loginUser);
+
+		if (loginUser != null) {
+			
+			session.setAttribute("loginUser", loginUser);
+			
+			session.setAttribute("alertMsg", "로그인에 성공했습니다.");
+			
+			
+			mv.setViewName("redirect:/");
+		}
+		else {
+			
+			session.setAttribute("alertMsg", "로그인에 실패했습니다.");
+			
+			mv.setViewName("redirect:/");
+		}
+		
+		return mv;
+		
+	}
+	
+	
+}

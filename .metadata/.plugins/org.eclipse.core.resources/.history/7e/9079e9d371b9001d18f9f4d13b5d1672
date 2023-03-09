@@ -1,0 +1,19 @@
+package com.gasystem.practice.member.model.service;
+
+import com.gasystem.practice.member.model.vo.Member;
+
+public class MemberServiceImpl implements MemberService {
+
+	@Autowired
+	private adminMyPageDao adMyPageDao;
+	
+	@Autowired
+	private SqlSessionTemplate sqlSession;
+	
+	
+	@Override
+	public Member loginMember(Member m) {
+		return null;
+	}
+
+}

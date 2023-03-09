@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="&#x09;&#x09;String encPwd = bcryptPasswordEncoder.encode(m.getMemberPwd());"/>
+		<list key="findhistory">
+			<item value="&#x09;&#x09;String encPwd = bcryptPasswordEncoder.encode(m.getMemberPwd());"/>
+			<item value="&#x09;&lt;select id=&quot;loginMember&quot; resultType=&quot;java.lang.Integer&quot;&gt;"/>
+		</list>
+	</section>
+</section>
