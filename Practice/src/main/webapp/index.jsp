@@ -86,7 +86,7 @@
         			<th><p><%= loginUser.getMemberName()%>님</p></th>
         		</tr>
         		<tr>
-        			<th><a href="logout.me">로그아웃</a></th>
+        			<th><button onclick="location.href='logout.me'">로그아웃</button></th>
         		</tr>
         	</table>
         </div>

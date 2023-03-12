@@ -5,7 +5,6 @@
 <html lang="en">
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="https://kit.fontawesome.com/6cda7ccd12.js" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <title>회원가입</title>
 <style>
@@ -79,7 +78,7 @@
                             </tr>
                             <tr style="display: inline-block;">
                                 <td colspan="3">
-                                    <input class="form-control" type="text" placeholder="아이디를 입력해주세요" style="width: 200px;" required name="memberId" id="memberId">
+                                    <input class="form-control" type="text" placeholder="5글자 이상을 입력해주세요" style="width: 200px;" required name="memberId" id="memberId">
                                 </td>
                                 <td>
                                     <button type="button" class="btn btn-primary" style="width:100px" name="idCheck" id="idCheckbtn">중복확인</button>
@@ -129,7 +128,6 @@
    			$("#idCheckbtn").on("click", function() {
    			
    			// 우선 최소 5글자 이상으로 아이디값이 입력되어 있을 때만 ajax 요청
-   			// => 쿼리문의 갯수가 한정되어있을 수 있기 때문
    			if($idInput.val().length >= 5) {
    				
    				// ajax 를 요청하여 중복체크
